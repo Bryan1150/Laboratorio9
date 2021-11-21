@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+h3{
+    color: red;
+    font-size: 1em;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#pokemon-img{
+	outline-style: dotted;
+}
+
+#pokemon-details{
+	outline-style: solid;
+	background-color: red;
+	font-family: verdana;
+	font-size: 20px;
+}
+.box {
+	margin: 30px;
+	width: 100px;
+	height: 100px;
+	background-color: rebeccapurple;
+	transform: rotate(0.8turn);
+}
+.button {
+  color: orange;
+  font-weight: bold;
+}
+
+
+</style>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Poke API </title>
+</head>
+<body>
+<h3>Poke API</h3>
+<a href="https://pokeapi.co/api/v2/">Pagina del API!</a>
+ <div>
+ <input id="name-input" type="text" placeholder="Nombre del Pokemón">
+ <button class="button" onclick="findPokemon()">Buscar</button>
+ </div>
+ <div id="pokemon-img"></div>
+ <div id="pokemon-details"></div>
+ <script src="./pokemon.js"> </script>
+ <div class="box"></div>
+</body>
+
+</html>

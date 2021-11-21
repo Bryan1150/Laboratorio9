@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 9 Cuestionario</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cuestionario.css" >
+    </head>
+    <body>
+        <header>
+            <h1>Quiz de matematica</h1>
+        </header>
+        <main>
+            <div>
+                <p><strong>Seleccionar cantidad preguntas (5-20)</strong></p>
+                <input id = "cantidadInput" style = "width: 10rem; margin-left: 2rem;" type="number" placeholder="Cantidad" min="5" max="20">
+                <button onclick="generarPreguntas()">Generar</button>    
+            </div>
+            <hr />
+            <div id="exercise-items">
+                <div id="items-list-container">
+                    <ol class="tasks">
+                        <li id="pregunta1">
+                           <strong> 2 + 3 (5 + 1) </strong>= <input type="number" id="inputSolucion1" > 
+                            <p id="respuesta1">Respuesta:</p><span id="solucion1">11</span> 
+                        </li>
+                        <li id="pregunta2">
+                            <strong>7 * (7 - 6) + 1 =</strong><input type="number" id="inputSolucion2" > 
+                            <p id="respuesta2">Respuesta:</p><span id="solucion2">8</span>
+                        </li>
+                        <li id="pregunta3">
+                           <strong> 56/2*3  = </strong><input type="number" id="inputSolucion3" >
+                            <p id="respuesta3">Respuesta:</p>  <span id="solucion3">84</span>
+                        </li>
+                        <li id="pregunta4">
+                            <strong>100*100-1 = </strong><input type="number" id="inputSolucion4" > 
+                            <p id="respuesta4">Respuesta:</p> <span id="solucion4">999</span>
+                        </li>                    
+                        <li id="pregunta5">
+                           <strong> 2*2*2*2*2 = </strong><input type="number" id="inputSolucion5" > 
+                            <p id="respuesta5">Respuesta:</p> <span id="solucion5">32</span>
+                        </li>
+                        <li id="pregunta6">
+                           <strong> 1+2-3*4/5 = </strong><input type="number" id="inputSolucion6" > 
+                            <p id="respuesta6">Respuesta:</p> <span id="solucion6">0</span>
+                        </li>
+                        <li id="pregunta7">
+                           <strong> 1 + 2 (35 / 5) = </strong><input type="number" id="inputSolucion7" > 
+                            <p id="respuesta7">Respuesta:</p> <span id="solucion7">15</span>
+                        </li>
+                        <li id="pregunta8">
+                           <strong> 8 + 7 (80 / 5) =</strong> <input type="number" id="inputSolucion8" > 
+                            <p id="respuesta8">Respuesta:</p> <span id="solucion8">120</span>
+                        </li>
+                        <li id="pregunta9">
+                           <strong> 6 - 5 - 2 + 20 = </strong><input type="number" id="inputSolucion9" > 
+                            <p id="respuesta9">Respuesta:</p> <span id="solucion9">7</span>
+                        </li>
+                        <li id="pregunta10">
+                           <strong> 2 + 7 - (24 * 2) + 5 =</strong> <input type="number" id="inputSolucion10" >
+                            <p id="respuesta10">Respuesta:</p>  <span id="solucion10">-34</span>
+                        </li>
+                        <li id="pregunta11">
+                           <strong> 8 + 14 - 73 = </strong><input type="number" id="inputSolucion11" > 
+                            <p id="respuesta11">Respuesta:</p> <span id="solucion11">-51</span>
+                        </li>
+                        <li id="pregunta12">
+                          <strong>  2 + 2 =</strong> <input type="number" id="inputSolucion12" > 
+                            <p id="respuesta12">Respuesta:</p> <span id="solucion12">4</span>
+                        </li>                    
+                        <li id="pregunta13">
+                           <strong> (50 / 2)</strong> = <input type="number" id="inputSolucion13" > 
+                            <p id="respuesta13">Respuesta:</p> <span id="solucion13">25</span>
+                        </li>
+                        <li id="pregunta14">
+                           <strong>  1000000-1 </strong>= <input type="number" id="inputSolucion14" > 
+                            <p id="respuesta14">Respuesta:</p> <span id="solucion14">999999</span>
+                        </li>
+                        <li id="pregunta15">
+                          <strong>  10+12-12</strong> = <input type="number" id="inputSolucion15" > 
+                            <p id="respuesta15">Respuesta:</p> <span id="solucion15">10</span>
+                        </li>
+                        <li id="pregunta16">
+                           <strong> 5*5-2</strong> = <input type="number" id="inputSolucion16" > 
+                            <p id="respuesta16">Respuesta:</p> <span id="solucion16">23</span>
+                        </li>
+                        <li id="pregunta17">
+                           <strong> 9*9*9 </strong>= <input type="number" id="inputSolucion17" > 
+                            <p id="respuesta17">Respuesta:</p> <span id="solucion17">729</span>
+                        </li>
+                        <li id="pregunta18">
+                           <strong> 69*69</strong> = <input type="number" id="inputSolucion18" > 
+                            <p id="respuesta18">Respuesta:</p> <span id="solucion18">4,761</span>
+                        </li>
+                        <li id="pregunta19">
+                           <strong> 420-69 </strong>= <input type="number" id="inputSolucion19" > 
+                            <p id="respuesta19">Respuesta:</p> <span id="solucion19">351</span>
+                        </li>
+                        <li id="pregunta20">
+                           <strong> 1-1 = </strong><input type="number" id="inputSolucion20" > 
+                            <p id="respuesta20">Respuesta:</p> <span id="solucion20">0</span>
+                        </li>
+                    </ol>
+                </div>
+				
+                <div>
+                    <span>
+                        <button onclick="document.getElementById('checkearRespuestasModal').style.display='block';"><strong>Verificar</strong></button>    
+                    </span>
+                    <span>
+                        <button onclick="document.getElementById('mostrarRespuestasModal').style.display='block';"><strong>Mostrar respuestas</strong></button>    
+                    </span>
+                </div>
+
+                <div id="mostrarRespuestasModal" class="modal">
+                    <span onclick="document.getElementById('mostrarRespuestasModal').style.display='none'" class="close" title="Close Modal">×</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <p><strong>¿Quiere ver las respuestas?</strong></p>
+                            
+                            <div class="clearfix">
+                                <button type="button" onclick="hide(MOSTRAR_RESPUESTAS_MODAL)" class="cancelbtn"><strong>No</strong></button>
+                                <button type="button" onclick="mostrarRespuestas()" class="OKbtn"><strong>Si</strong></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="checkearRespuestasModal" class="modal">
+                    <span onclick="document.getElementById('checkearRespuestasModal').style.display='none'" class="close" title="Close Modal">×</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <p><strong>¿Quiere comprobar sus respuestas?</strong></p>
+                            
+                            <div class="clearfix">
+                                <button type="button" onclick="hide(CHECKEAR_RESPUESTAS_MODAL)" class="cancelbtn"><strong>No</strong></button>
+                                <button type="button" onclick="checkAnswers()" class="OKbtn"><strong>Si</strong></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="./js/cuestionario.js"></script>
+    </body>
+</html>
